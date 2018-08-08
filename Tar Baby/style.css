@@ -1,0 +1,164 @@
+body {min-height: 800px;
+	margin-left: 20px;
+	margin-top: 5px;
+	background-image: url("beach bg.png");
+	animation: fadein 2s;
+	-moz-animation:fadein 2s;
+	-webkit-animation: fadein 2s; 
+    -o-animation: fadein 2s;
+    min-width: 1000px;
+    
+}
+
+.navbar-nav{
+        float:none;
+        margin: 0 auto;
+        display: table;
+        table-layout: fixed;
+    }
+
+.navbar-default {
+	background-color: transparent;
+	border-color: transparent;
+	border-radius: 0px;
+	margin-bottom: 0px;
+	min-height: 90px;
+	text-align: center;
+}
+
+.slide1, .slide2, .slide3 {
+	min-height: 500px; /* Must have a height or min-height set due to use of background images */
+	background-size: cover;
+	background-position: center center;
+}
+
+.slide1 {
+	background-image: url("carousel.png");
+}
+
+.nav {
+	text-align: center;	
+	font-size: 50px;
+
+}
+
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.jumbotron {
+	text-align: center;
+	background-color: #c42d09;
+	color: white;
+
+
+}
+
+.btn-lg {
+	padding: 60px 50px;
+	text-align: center;
+	font-size: 30px;
+	font-family: myFont;
+	background-color: transparent; ;
+	border-radius: 15px;
+	border-color: #3e3f3a;
+	color: #000000;
+	opacity: .6;
+}
+
+.btn-lg:hover {
+	background-color: #f40491;
+}
+
+.well {
+		background-color: transparent; 
+		border-color: #3e3f3a;
+		border-radius: 1px
+}
+
+.well h1 {
+	font-size: 30px;
+}
+
+.well a:hover {
+	color:#f40491;
+}
+@font-face {
+	font-family: myFont;
+	src: url(BRINGTHANOIZE.ttf);
+}
+
+h1 {
+	font-family: myFont;
+}
+
+/* The side navigation menu */
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #111; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+a {
+	color: currentColor;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
